@@ -1,12 +1,12 @@
 {
-	"name": "EgoTech",
+	"name": "EgoTech · Alexandre Urbain",
 	"short_name": "EgoTech",
 	"icons": [{
 		"src": "/android-chrome-192x192.png",
 		"sizes": "192x192",
 		"type": "image/png"
 	}],
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff",
+	"theme_color": "#07090f",
+	"background_color": "#07090f",
 	"display": "standalone"
 }

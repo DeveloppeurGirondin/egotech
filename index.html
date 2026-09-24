@@ -2,1382 +2,951 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Alexandre Urbain - Développeur Freelance @EgoTech">
+    <title>Alexandre Urbain · EgoTech — Dev Senior Fullstack Java / Spring / Angular</title>
+    <meta name="description" content="Alexandre Urbain — Dev Senior Fullstack Java / Spring / Angular · 15 ans d'expérience. Lead technique, CTO, accompagnement produit via EgoTech, Bordeaux.">
     <meta name="author" content="Alexandre Urbain">
     <meta name="robots" content="index,follow">
-    <meta name="googlebot" content="index,follow">
     <meta name="google" content="notranslate">
-    <meta name="language" content="fr">
     <link rel="canonical" href="https://www.egotech.fr/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="EgoTech - Alexandre Urbain">
-    <meta property="og:description" content="Alexandre Urbain - Développeur Freelance @EgoTech">
+    <meta property="og:title" content="Alexandre Urbain · EgoTech">
+    <meta property="og:description" content="Dev Senior Fullstack Java / Spring / Angular · 15 ans d'expérience">
     <meta property="og:url" content="https://www.egotech.fr/">
-    <meta property="og:image" content="https://www.egotech.fr/images/avatar.webp">
+    <meta property="og:image" content="https://www.egotech.fr/images/avatar-hd.webp">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="EgoTech">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="EgoTech - Alexandre Urbain">
-    <meta name="twitter:description" content="Alexandre Urbain - Développeur Freelance @EgoTech">
-    <meta name="twitter:image" content="https://www.egotech.fr/images/avatar.webp">
-    <title>EgoTech - Alexandre Urbain</title>
+    <meta name="twitter:title" content="Alexandre Urbain · EgoTech">
+    <meta name="twitter:description" content="Dev Senior Fullstack Java / Spring / Angular · 15 ans d'expérience">
+    <meta name="twitter:image" content="https://www.egotech.fr/images/avatar-hd.webp">
+    <meta name="theme-color" content="#07090f" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link rel="preload" as="style"
-          href="css/fonts/fonts.googleapis.com_css2_family=Poppins_wght@600&family=Roboto_wght@300;400;500;700&display=swap.css"
-          media="print" onload="this.media='all'"/>
-    <noscript>
-        <link rel="stylesheet"
-              href="css/fonts/fonts.googleapis.com_css2_family=Poppins_wght@600&family=Roboto_wght@300;400;500;700&display=swap.css"/>
-    </noscript>
-    <link rel="preload" as="style" href="css/font-awesome/css/all.min.css?ver=1.2.1" type="text/css"/>
-    <link rel="stylesheet" href="css/mdb.min.css?ver=1.2.1" type="text/css"/>
-    <noscript>
-        <style>
-            [data-aos] {
-                opacity: 1 !important;
-                transform: translate(0) scale(1) !important;
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2dd4bf">
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (t !== 'light' && t !== 'dark') {
+                t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
             }
-        </style>
-    </noscript>
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css?v=2.0.0">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Alexandre Urbain",
+            "jobTitle": "Dev Senior Fullstack Java / Spring / Angular",
+            "worksFor": {"@type": "Organization", "name": "EgoTech", "url": "https://www.egotech.fr/"},
+            "address": {"@type": "PostalAddress", "addressLocality": "Bordeaux", "addressRegion": "Nouvelle-Aquitaine", "addressCountry": "FR"},
+            "email": "mailto:alexandre@egotech.fr",
+            "image": "https://www.egotech.fr/images/avatar-hd.webp",
+            "sameAs": ["https://www.linkedin.com/in/alexandreurbain/", "https://github.com/DeveloppeurGirondin"]
+        }
+    </script>
 </head>
-<body class="bg-light" id="top">
-<header class="d-print-none">
-    <div class="container text-center text-lg-left">
-        <div class="pt-2 clearfix">
-            <h1 class="site-title mb-0">EgoTech - Alexandre Urbain</h1>
-            <div class="site-nav">
-                <nav role="navigation">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item"><a class="nav-link" href="#about" title="À propos de moi"><span
-                                class="menu-title">À propos de moi</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills" title="Compétences"><span
-                                class="menu-title">Compétences</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience" title="Expériences"><span
-                                class="menu-title">Expériences</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education" title="Diplômes"><span
-                                class="menu-title">Diplômes</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span
-                                class="menu-title">Portfolio</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#recommandations" title="Recommandations"><span
-                                class="menu-title">Recommandations</span></a></li>
-                    </ul>
-                </nav>
-            </div>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.1c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm-1 1 9 7 9-7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21zm0-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3.6 9h16.8M3.6 15h16.8M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></symbol>
+    <symbol id="i-build" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3zm0 0v18m8-13.5-8 4.5-8-4.5"/></symbol>
+    <symbol id="i-team" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm-7 10v-1a6 6 0 0 1 12 0v1m2-10a3 3 0 1 0 0-6m6 16v-1a5 5 0 0 0-4-4.9"/></symbol>
+    <symbol id="i-bridge" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 17h18M5 17V9m14 8V9M3 9c3 0 6 3 9 3s6-3 9-3M9 17v-4m6 4v-4"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v4m0 10v4M3 12h4m10 0h4M6 6l2.5 2.5m7 7L18 18M6 18l2.5-2.5m7-7L18 6"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 21h8m-4-4v4m-5-17h10v5a5 5 0 0 1-10 0V4zm0 2H4v1a3 3 0 0 0 3 3m10-4h3v1a3 3 0 0 1-3 3"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m2 9 10-5 10 5-10 5L2 9zm4 2v5c0 1.5 3 3 6 3s6-1.5 6-3v-5m4-2v6"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" d="M9.6 6C6.5 7.3 4 10.1 4 14v4h6v-6H7.3c.2-2 1.5-3.6 3.3-4.4L9.6 6zm10 0c-3.1 1.3-5.6 4.1-5.6 8v4h6v-6h-2.7c.2-2 1.5-3.6 3.3-4.4L19.6 6z"/></symbol>
+</svg>
+
+<div class="progress" aria-hidden="true"><span></span></div>
+
+<header class="site-header" id="top">
+    <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Retour en haut de page">
+            <img src="images/EgoTech_logo-new.webp" width="36" height="44" alt="">
+            <span>Ego<b>Tech</b></span>
+        </a>
+        <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#experience">Parcours</a>
+            <a href="#work">Réalisations</a>
+            <a href="#education">Formation</a>
+            <a href="#recommandations">Recommandations</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="icon-btn theme-toggle" type="button" aria-label="Basculer le thème clair / sombre">
+                <svg class="ico-sun"><use href="#i-sun"/></svg>
+                <svg class="ico-moon"><use href="#i-moon"/></svg>
+            </button>
+            <a class="btn btn-primary btn-sm hide-sm" href="#contact">Me contacter</a>
+            <button class="icon-btn burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span>
+            </button>
         </div>
     </div>
 </header>
-<main class="page-content">
-    <div class="container">
-        <div class="resume-container">
-            <div class="shadow-1-strong bg-white my-4" id="intro">
-                <div class="bg-info text-white">
-                    <div class="cover bg-image"><img src="images/header-background.webp" width="1600" height="685"
-                                                     alt="header_bg"/>
-                        <div class="mask">
-                            <div class="text-center p-5">
-                                <div class="avatar p-1">
-                                    <img class="img-thumbnail shadow-2-strong mx-2 d-none d-md-inline"
-                                         src="images/EgoTech_logo.webp" alt="EgoTech logo"
-                                         width="170" height="211"/>
-                                    <img class="img-thumbnail shadow-2-strong mx-2" src="images/avatar.webp" width="150"
-                                         alt="ma tête" height="210"/>
-                                </div>
-                                <div class="header-bio my-3">
-                                    <div data-aos="zoom-in" data-aos-delay="0">
-                                        <h2 class="h1">Alexandre Urbain</h2>
-                                        <p>Développeur Freelance @EgoTech</p>
-                                    </div>
-                                    <div class="header-social mb-3 d-print-none" data-aos="zoom-in"
-                                         data-aos-delay="200">
-                                        <nav role="navigation">
-                                            <ul class="nav justify-content-center">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" target="_blank"
-                                                       rel="noopener noreferrer"
-                                                       href="https://www.linkedin.com/in/alexandreurbain/"
-                                                       title="Linkedin">
-                                                        <i class="fab fa-linkedin"></i><span
-                                                            class="menu-title">Linkedin</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" target="_blank"
-                                                       rel="noopener noreferrer"
-                                                       href="https://github.com/DeveloppeurGirondin" title="Github">
-                                                        <i class="fab fa-github"></i><span
-                                                            class="menu-title visually-hidden">Github</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="d-print-none mb-3">
-                                        <a class="btn btn-outline-light btn-lg shadow-sm mt-1 mx-3 mb-2"
-                                           href="file/URBAIN_Alexandre.pdf" download="URBAIN_Alexandre.pdf"
-                                           data-aos="fade-right" data-aos-delay="700">Télécharger
-                                            mon CV</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+<main>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="blob b1"></div>
+            <div class="blob b2"></div>
+            <div class="blob b3"></div>
+            <div class="grid-lines"></div>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <p class="eyebrow reveal"><span class="pulse"></span>Ouvert à de nouvelles missions · Bordeaux</p>
+                <h1 class="reveal">Alexandre <span class="grad">Urbain</span></h1>
+                <p class="hero-role reveal">
+                    <span class="mono">&gt;</span> <span class="typed" data-words="Lead Dev Fullstack Senior|CTO de startup|Directeur technique en ESN|Co-fondateur d'un SaaS B2B|Tech Lead">Lead Dev Fullstack Senior</span><span class="caret"></span>
+                </p>
+                <p class="hero-lead reveal">Dev Senior Fullstack Java / Spring / Angular · 15 ans d’expérience. J'interviens depuis 2023 sous ma propre structure <strong>EgoTech</strong> en mission chez des startups comme des grands comptes du secteur bancaire.</p>
+                <div class="hero-cta reveal">
+                    <a class="btn btn-primary" href="#contact">Discutons de votre projet <svg><use href="#i-arrow"/></svg></a>
+                    <a class="btn btn-ghost" href="file/URBAIN_Alexandre.pdf" download="URBAIN_Alexandre.pdf"><svg><use href="#i-download"/></svg> Télécharger mon CV</a>
                 </div>
-                <div class="shadow-1-strong bg-white my-4 px-5 py-4">
-                    <h5>J'ai travaillé pour eux :</h5>
-
-                    <section class="logo-carousel" data-arrows="false">
-                        <div class="slide"><img src="images/slider/groupe-casino.webp" width="130" height="72"
-                                                title="Groupe Casino" alt="Groupe Casino"></div>
-                        <div class="slide"><img src="images/slider/cdiscount.webp" width="130" height="63"
-                                                title="CDiscount"
-                                                alt="CDiscount"></div>
-                        <div class="slide"><img src="images/slider/sqli.webp" width="130" height="53" title="SQLI"
-                                                alt="SQLI"></div>
-                        <div class="slide"><img src="images/slider/orange.webp" width="130" height="73" title="Orange"
-                                                alt="Orange"></div>
-                        <div class="slide"><img src="images/slider/ippon.webp" width="130" height="38"
-                                                title="Ippon Technologies"
-                                                alt="Ippon Technologies"></div>
-                        <div class="slide"><img src="images/slider/betclic.webp" width="130" height="44" title="Betclic"
-                                                alt="Betclic"></div>
-                        <div class="slide"><img src="images/slider/aubay.webp" width="130" height="137" title="Aubay"
-                                                alt="Aubay"></div>
-                        <div class="slide"><img src="images/slider/uff.webp" width="144" height="130" title="UFF"
-                                                alt="UFF"></div>
-                        <div class="slide"><img src="images/slider/bnpparibas.webp" width="130" height="33"
-                                                title="BNP Paribas"
-                                                alt="BNP Paribas"></div>
-                        <div class="slide"><img src="images/slider/mairie-de-bordeaux.webp" width="130" height="55"
-                                                title="Mairie de Bordeaux" alt="Mairie de Bordeaux"></div>
-                        <div class="slide"><img src="images/slider/cultura.webp" width="130" height="36" title="Cultura"
-                                                alt="Cultura"></div>
-                        <div class="slide"><img src="images/slider/lumm.webp" width="130" height="28" title="Lumm"
-                                                alt="Lumm"></div>
-                        <div class="slide"><img src="images/slider/bary.webp" width="130" height="42" title="Bary"
-                                                alt="Bary"></div>
-                        <div class="slide"><img src="images/slider/softeam.webp" width="130" height="47"
-                                                title="Softeam Data" alt="Softeam Data"></div>
-                        <div class="slide"><img src="images/slider/rcassocies.webp" width="130" height="46"
-                                                title="RC&Associés" alt="RC&Associés"></div>
-                        <div class="slide"><img src="images/slider/cofinoga.webp" width="130" height="54"
-                                                title="Cofinoga"
-                                                alt="Cofinoga"></div>
-                        <div class="slide"><img src="images/slider/msa.webp" width="130" height="60"
-                                                title="Mutuelle Sociale Agricole" alt="Mutuelle Sociale Agricole"></div>
-                        <div class="slide"><img src="images/slider/meeddat.webp"
-                                                width="130" height="46"
-                                                title="Ministère de l'écologie, de l'Energie, du Développement Durable et de l'Aménagement du Territoire"
-                                                alt="Ministère de l'écologie, de l'Energie, du Développement Durable et de l'Aménagement du Territoire"/>
-                        </div>
-                        <div class="slide"><img src="images/slider/adacis.webp" width="130" height="49" title="Adacis"
-                                                alt="Adacis"></div>
-                        <div class="slide"><img src="images/slider/alterconseil.webp" width="130" height="115"
-                                                title="Alter Conseil" alt="Alter Conseil"/></div>
-                    </section>
+                <div class="hero-social reveal">
+                    <a href="https://www.linkedin.com/in/alexandreurbain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+                    <a href="https://github.com/DeveloppeurGirondin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+                    <a href="mailto:alexandre@egotech.fr" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
                 </div>
-                <div class="shadow-1-strong bg-white my-4 px-5 py-4" id="about">
-                    <div class="about-section">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h2 class="h2 fw-light mb-4">A propos de moi</h2>
-                                <p>Bonjour, je suis Alexandre Urbain, passionné par le développement informatique depuis
-                                    le
-                                    collège.
-                                    Je suis en tout premier lieu un <strong>développeur back-end</strong> mais mes
-                                    années
-                                    d'expériences m'ont permis
-                                    de devenir un touche à tout aussi bien <strong>à l'aise en front-end</strong>,
-                                    <strong>en
-                                        déploiement continue</strong>, <strong>en méthodologie
-                                        agile</strong>, en utilisation de <strong>cloud</strong>, etc...</p>
-                                <p>Ma principale valeur ajoutée en dehors de ma technicité, de mon expérience et de ma
-                                    polyvalence est ma
-                                    capacité à comprendre une problématique métier et à y apporter une solution
-                                    technique.</p>
-                            </div>
-                            <div class="col-md-5 offset-lg-1">
-                                <div class="row mt-2">
-                                    <h2 class="h2 fw-light mb-4">Bio</h2>
-                                    <div class="col-5">
-                                        <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted"
-                                                                       style="width:24px;opacity:0.85;"></i> Âge
-                                        </div>
-                                    </div>
-                                    <div class="col-7">
-                                        <div class="pb-2">38 ans</div>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted"
-                                                                       style="width:24px;opacity:0.85;"></i> Email
-                                        </div>
-                                    </div>
-                                    <div class="col-7">
-                                        <div class="pb-2">
-                                            <a href="mailto:alexandre@egotech.fr">alexandre@egotech.fr</a></div>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted"
-                                                                       style="width:24px;opacity:0.85;"></i> Tél<span
-                                                class="d-none d-sm-inline">éphone</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-7">
-                                        <div class="pb-2"><a href="tel:0642584916">06 42 58 49 16</a></div>
-                                    </div>
-                                    <div class="d-none d-sm-block col-5">
-                                        <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted"
-                                                                       style="width:24px;opacity:0.85;"></i>
-                                            Localisation
-                                        </div>
-                                    </div>
-                                    <div class="d-none d-sm-block col-7">
-                                        <div class="pb-2">Bordeaux</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shadow-1-strong bg-white my-4 px-5 py-4" id="skills">
-                    <div class="skills-section">
-                        <h2 class="h2 fw-light mb-4">Compétences</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4>BACK/DEVOPS</h4>
-                                <div class="mb-3"><span class="fw-bolder">Java / SpringBoot / Maven / Gradle</span>
-                                    <div class="progress my-2 rounded" style="height: 20px">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-label="Java skill"
-                                             data-aos="zoom-in-right"
-                                             data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 95%"
-                                             aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Expert
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3"><span class="fw-bolder">Mysql / PostgreSQL / Git</span>
-                                    <div class="progress my-2 rounded" style="height: 20px">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-label="SQL skill"
-                                             data-aos="zoom-in-right"
-                                             data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 90%"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Expert
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3"><span class="fw-bolder">Google Cloud / Gitlab CI / Jenkins / GitHub Actions</span>
-                                    <div class="progress my-2 rounded" style="height: 20px">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-label="CI/CD skill"
-                                             data-aos="zoom-in-right"
-                                             data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 65%"
-                                             aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">à l'aise
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3"><span class="fw-bolder">NoSQL / Kotlin / GraphQL</span>
-                                    <div class="progress my-2 rounded" style="height: 20px">
-                                        <div class="progress-bar bg-primary" role="progressbar"
-                                             aria-label="Other skills"
-                                             data-aos="zoom-in-right"
-                                             data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 40%"
-                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Débutant
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h4>FRONT</h4>
-                                <div class="mb-3"><span class="fw-bolder">HTML / CSS / Responsive</span>
-                                    <div class="progress my-2 rounded" style="height: 20px">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-label="HTML skill"
-                                             data-aos="zoom-in-right"
-                                             data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 95%;"
-                                             aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Expert
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3"><span class="fw-bolder">Typescript / Angular</span>
-                                    <div class="progress my-2 rounded" style="height: 20px">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-label="Angular skill"
-                                             data-aos="zoom-in-right"
-                                             data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 70%"
-                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">à l'aise
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3"><span class="fw-bolder">WordPress</span>
-                                    <div class="progress my-2 rounded" style="height: 20px">
-                                        <div class="progress-bar bg-info" role="progressbar"
-                                             aria-label="Wordpress skill"
-                                             data-aos="zoom-in-right"
-                                             data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 60%"
-                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">OK
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3"><span class="fw-bolder">Design Web</span>
-                                    <div class="progress my-2 rounded" style="height: 20px">
-                                        <div class="progress-bar bg-info" role="progressbar"
-                                             aria-label="Webdesign skill"
-                                             data-aos="zoom-in-right"
-                                             data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 30%"
-                                             aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Passable
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shadow-1-strong bg-white my-4 px-5 py-4" id="experience">
-                    <div class="work-experience-section">
-                        <h2 class="h2 fw-light mb-4">Parcours professionnel</h2>
-                        <div class="timeline">
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/logos/aubay.webp" width="55" height="57" alt="Aubay"
-                                                 class="company-logo" loading="lazy"/>
-                                            <img src="images/logos/bnpparibas.webp" width="55" height="30"
-                                                 alt="BNP Paribas"
-                                                 class="company-logo" loading="lazy" style="top: 60px"/>
-                                            <div class="h5">Directeur technique <span class="text-muted">@<a
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    href="https://aubay.com/">Aubay</a></span>
-                                            </div>
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>Octobre
-                                                2023 - Aujourd'hui
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">Java, PostgreSQL,
-                                                Spring Boot, Hibernate, Maven, Angular, SASS, Gitlab, Jenkins, Docker
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>Aubay est une entreprise de services du numérique (ESN) qui se spécialise dans
-                                        le conseil et l'ingénierie en technologies de l'information.
-                                        Elle offre des solutions sur mesure pour répondre aux défis technologiques et
-                                        opérationnels des entreprises modernes.
-                                        Avec une expertise approfondie dans des domaines variés comme le cloud, la
-                                        cybersécurité, le big data et l'intelligence artificielle,
-                                        Aubay accompagne ses clients dans leur transformation digitale.
-                                        L'entreprise propose également des services d'intégration de systèmes, de
-                                        maintenance et de gestion des infrastructures informatiques.
-                                        Son approche collaborative et son engagement envers l'innovation garantissent
-                                        des solutions efficaces et durables pour ses partenaires.
-
-                                        En tant que directeur technique de l'agence bordelaise, mes missions ont été de
-                                        :
-                                        <ul>
-                                            <li>Développer l'activité de l'agence</li>
-                                            <li>Apporter mon expertise technique aux équipes</li>
-                                            <li>Aider les agences lors des phases de recrutement</li>
-                                            <li>Représenter le savoir-faire de l'entreprise en étant en mission chez le
-                                                client
-                                            </li>
-                                        </ul>
-
-                                        J'ai donc eu pour mission de travailler pour BNP Paribas dans une équipe dans
-                                        laquelle j'ai supervisé un collaborateur junior avant que cette expérience en
-                                        régie se transforme en centre de services.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/logos/betclic.webp" width="55" height="18" alt="Betclic"
-                                                 class="company-logo" loading="lazy"/>
-                                            <img src="images/logos/ippon.webp" width="55" height="16"
-                                                 alt="Ippon Technologies"
-                                                 class="company-logo" loading="lazy" style="top: 50px"/>
-                                            <div class="h5">Développeur sénior <span class="text-muted">@<a
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    href="https://www.betclic.fr/">Betclic</a></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>Avril
-                                                2023 - Septembre 2023
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">AWS, Kotlin, Ktor, Maven,
-                                                Gitlab CI, Angular, Typescript, NodeJS, Docker
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Betclic est un acteur majeur dans le secteur des paris sportifs et des jeux en
-                                        ligne.
-                                        Fondée sur une plateforme technologique avancée, l'entreprise offre une
-                                        expérience de jeu interactive et captivante.
-                                        Spécialisée dans les paris sur divers événements sportifs, Betclic propose
-                                        également des jeux de casino, poker et autres jeux en ligne.
-                                        Elle met un point d'honneur à assurer un environnement de jeu responsable et
-                                        sécurisé.
-                                        Grâce à une interface intuitive et des applications mobiles performantes,
-                                        Betclic rend l'accès aux paris et aux jeux facile et agréable pour ses
-                                        utilisateurs.
-                                        L'entreprise est également connue pour son engagement dans le sponsoring
-                                        sportif, renforçant ainsi sa présence et son impact dans le monde du sport.
-
-                                        J'ai eu la chance de pouvoir travailler dans 2 équipes différentes et sur 2
-                                        postes complémentaires.
-
-                                        <ul>
-                                            <li>Une première mission de 3 mois dans une équipe en tant que développeur
-                                                Backend Kotlin
-                                            </li>
-                                            <li>Une seconde mission de 3 mois dans une équipe en tant que développeur
-                                                Frontend Angular
-                                            </li>
-                                        </ul>
-
-                                        Après plusieurs années en tant que CTO et dans des petites structures, ces
-                                        missions m'ont permis de retrouver la rigueur et les process d'une grande
-                                        entreprise.
-                                        J'en ai profité pour me remettre à jour techniquement que ça soit en backend ou
-                                        en frontend.
-                                        Enfin, j'ai eu du plaisir à échanger avec des développeurs expérimentés, des
-                                        managers à l'écoute et à être autant entouré.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/logos/lumm.webp" width="55" height="52" alt="Lumm"
-                                                 class="company-logo" loading="lazy"/>
-                                            <div class="h5">CTO <span class="text-muted">@Lumm</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>Février
-                                                2022 - Mars 2023
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">Google Cloud AppEngine, Java, MySQL,
-                                                Spring Boot, Hibernate, Maven, Angular, SASS, Webpack, Gitlab
-                                                CI
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>Lumm est un service digital dédié au bien-être mental des collaborateurs en
-                                        entreprise.
-                                        Proposant des parcours thérapeutiques ciblant des besoins qualifiés, il propose
-                                        un
-                                        accompagnement adapté à chacun.
-                                        Accès à des thérapeutes en visioconférence, à des outils digitaux ou des
-                                        ateliers
-                                        dédiés au bien-être mental, tout est regroupé au sein même
-                                        des
-                                        outils.
-                                        <ul>
-                                            <li>Développer une expérience utilisateur accessible et innovante pour
-                                                accompagner chacun avec bienveillance et efficacité
-                                            </li>
-                                            <li>Apporter aux entreprises une solution qui leur fait gagner du temps,
-                                                leur
-                                                apporte de la donnée actionnable et protège l’anonymat de tous
-                                                dans un écosystème hyper-sécurisé.
-                                            </li>
-                                            <li>Accompagner l'entreprise dans sa stratégie digitale</li>
-                                        </ul>
-                                        J'ai développé seul pendant 2 mois la première version de l'outil avec la mise
-                                        en
-                                        place des différents environnements, du déploiement continu,
-                                        des
-                                        bases de données, des tests automatisés, etc.
-                                        L'équipe s'est ensuite agrandie et nous avons développé de nombreuses
-                                        fonctionnalités ensemble dont les stats, les parcours, l'espace
-                                        thérapeute,
-                                        l'espace Admin et des outils de test pour les devs.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/logos/bary.webp" width="54" height="55" alt="Bary"
-                                                 class="company-logo" loading="lazy"/>
-                                            <div class="h5">Co-fondateur et CTO <span class="text-muted">@<a
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    href="https://www.bary.app/">Bary</a></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>Avril
-                                                2019 - Janvier 2022
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">Google Cloud AppEngine, Java, MySQL,
-                                                Spring Boot, Hibernate, Maven, Angular, SASS, Webpack, Gitlab
-                                                CI
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Bary est un éditeur de solution logicielle spécialisé dans le secteur du
-                                        transport
-                                        routier.
-                                        La philosophie de l'entreprise est d'offrir aux acteurs du secteur un outil
-                                        commercial dans un système gagnant-gagnant permettant :
-                                        <ul>
-                                            <li>Aux transporteurs d'avoir de la visibilité en ligne, d'y faire du
-                                                commerce
-                                                et d'automatiser des tâches administratives (paiement en
-                                                ligne,
-                                                facturation, suivi de commande, etc...)
-                                            </li>
-                                            <li>A leur client d'accéder à une interface de vente facilitant la démarche
-                                                d'achat.
-                                            </li>
-                                        </ul>
-                                        En tant que CTO, ma tâche a été de mettre en place l'ensemble de la solution,
-                                        des
-                                        premières discussions pour recueillir le besoin métier et aux
-                                        premières maquettes jusqu'à la mise en production
-                                        de l'application en passant par la gestion des sources, les déploiements et les
-                                        tests automatisés et la constitution d'une équipe organisée
-                                        autour
-                                        des méthodes agiles.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/logos/softeam.webp" width="56" height="52"
-                                                 alt="SoftTeam Data"
-                                                 class="company-logo" loading="lazy"/>
-                                            <img src="images/logos/orange.webp" width="55" height="30" alt="Orange"
-                                                 class="company-logo" loading="lazy" style="top: 33px;"/>
-                                            <div class="h5">Backend Java Senior <span class="text-muted">@<a
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    href="https://www.orange.fr">Orange</a></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>Janvier
-                                                2019 - Avril 2019
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">Java, Spring Boot, RabbitMQ, Maven,
-                                                Docker
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Consultant Senior Java/Spring, j'ai été envoyé en mission dans l'entreprise
-                                        Orange
-                                        Applications for Business pour travailler sur le produit
-                                        Contact Everyone.
-                                        J'ai pu y découvrir une équipe d'une dizaine de personnes, compétentes et
-                                        autonomes
-                                        sur une stack technique moderne (rabbitMQ, environnement
-                                        dockerisé, angular) et des sujets métiers complexes.
-                                        Techniquement : beaucoup de TU/TI/Tests frontend automatisés, triple relecture
-                                        de
-                                        code.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="500">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/logos/rcassocies.webp" width="55" height="19"
-                                                 alt="RC&Associés"
-                                                 class="company-logo" loading="lazy"/>
-                                            <div class="h5">CTO <span class="text-muted">@<a target="_blank"
-                                                                                             rel="noopener noreferrer"
-                                                                                             href="https://www.rcassocies.com/">RC&Associes</a></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>juillet
-                                                2016 - décembre 2018
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">Java, MySQL, Spring Boot, Hibernate,
-                                                Maven, Angular, SASS, Webpack
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Responsable de l'ensemble des projets informatiques de l'entreprise, j'ai
-                                        réalisé
-                                        des outils (applications) qui répondent aux différents besoins
-                                        métiers.<br/>
-                                        Projets :
-                                        <ul>
-                                            <li>Winestock qui regroupe les stocks internes et ceux des fournisseurs
-                                                (fichiers XLS, CSV, TXT importés par HTTP/FTP/upload via un
-                                                formulaire) dans une datatable JS (filtres/tris/recherche en serverside
-                                                processing).
-                                            </li>
-                                            <li>Cashflow Manager qui est une application permettant de mettre en avant
-                                                les
-                                                défauts de paiement des clients et qui permet de générer un
-                                                mail personnalisé afin de les relancer.
-                                            </li>
-                                            <li>Rupture Solver qui est un outil remontant les ruptures de stocks et les
-                                                possibles solutions en cherchant dans le stock et dans les
-                                                commandes d'achat à venir.
-                                            </li>
-                                            <li>Transport Manager qui est une solution de gestion du transport des
-                                                produits
-                                                de l'entreprise permettant de planifier et suivre les
-                                                enlèvements et les expéditions de produits en communiquant directement
-                                                avec
-                                                l'entrepôt et en générant les bordereaux de livraison pour
-                                                les transporteurs avec toutes les spécificités métier (douane, DAE, DSA,
-                                                commentaires de préparation, de livraison, etc.)
-                                            </li>
-                                        </ul>
-                                        Réalisations :
-                                        <ul>
-                                            <li>Mise en place de l’environnement de développement, de préproduction et
-                                                de
-                                                production
-                                            </li>
-                                            <li>Mise en place de l’intégration continue (Jenkins, Sonar, web hook git,
-                                                Nexus, etc)
-                                            </li>
-                                            <li>Analyse des besoins, priorisation, chiffrage et développements des
-                                                solutions
-                                                (Spring-boot, Angular)
-                                            </li>
-                                            <li>Mise en place de la stack ELK et suivi des logs / métriques</li>
-                                            <li>Connexion de l'application à des prestataires externes (échanges de
-                                                fichiers, appels web automatisés)
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="500">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/logos/cdiscount.webp" width="56" height="52"
-                                                 alt="CDiscount"
-                                                 class="company-logo" loading="lazy"/>
-                                            <div class="h5">Chef de projet technique / Lead tech <span
-                                                    class="text-muted">@<a target="_blank" rel="noopener noreferrer"
-                                                                           href="https://www.cdiscount.com/">CDiscount</a></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>Mai
-                                                2013 - Juin 2016
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">C#, .NET Framework 4.5, CDiscount
-                                                Framework,Java 1.4, SAP Netweaver 7.0, Struts, SAP CRM, Git,
-                                                JQuery, HTML5/CSS3
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Leader Technique au sein d'une équipe de 10 personnes (dont un scrum master et
-                                        un
-                                        product owner) sur les solutions e-commerce de CasinoDrive
-                                        puis développeur front sur la partie alimentaire de CDiscount :
-                                        <ul>
-                                            <li>Sites web Casinodrive.fr, Casinoexpress.fr et MesCoursesCasino.fr</li>
-                                            <li>Application des bornes Casinodrive</li>
-                                            <li>Webservices fournis à l'application mobile MCasino</li>
-                                            <li>Développement de la solution d'ecommerce alimentaire de CDiscount</li>
-                                        </ul>
-
-                                        Projets :
-                                        Maintenance évolutive des sites e-commerce alimentaires du groupe Casino.
-                                        Maintenance évolutive de l’application des bornes (application web avec Applet
-                                        Java
-                                        en environnement multi-threadé)
-
-                                        Réalisations :
-                                        <ul>
-
-                                            <li>Travail en totale autonomie sur une technologie de 10 ans sans support
-                                                et
-                                                avec peu d’aide sur Internet.
-                                            </li>
-                                            <li>De nombreuses problématiques techniques et organisationnelles que
-                                                l’équipe a
-                                                constamment cherché à résoudre (via l’agilité entre
-                                                autre).
-                                            </li>
-                                            <li>Participations aux réunions avec le client et au recrutement des
-                                                nouveaux
-                                                membres pour l’équipe
-                                            </li>
-                                            <li>Mise en place de Tests automatisés dans un environnement techniquement
-                                                pauvre en outils (Java 1.4)
-                                            </li>
-                                            <li>Leader technique sur le projet, j'ai su tirer le meilleur de mon équipe
-                                                dans
-                                                des moments difficiles (turnover, limitations
-                                                technologiques,
-                                                blocages fonctionnels) et j'ai résolu de nombreux casse-têtes
-                                                techniques.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="500">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/logos/sqli.webp" width="55" height="56" alt="SQLI"
-                                                 class="company-logo" loading="lazy"/>
-                                            <div class="h5">Ingénieur en conception et développements <span
-                                                    class="text-muted">@<a target="_blank" rel="noopener noreferrer"
-                                                                           href="https://www.sqli.com">SQLI</a></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>Octobre
-                                                2011 - Septembre 2015
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">Java 1.4 et 1.6, Junit, Mockito,
-                                                Alfresco, Liferay MySQL, Maven, JQuery, JQuery-UI, Jackrabbit,
-                                                Jetspeed2, Play framework 1.2, Hibernate, Bootstrap, JqWidgets, SAP
-                                                Netweaver 7.0, Struts, SAP CRM, Git
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Plusieurs Missions en tant qu'ingénieur en conception et développement :
-                                        <ul>
-                                            <li>bordeaux.fr : refonte technique complète du site (équipe de 4 personnes)
-                                                |
-                                                principale tech: Jetspeed2
-                                            </li>
-                                            <li>Cultura : développement d'une application interne permettant la gestion
-                                                de
-                                                campagnes nationales pour le service achat (équipe de 7
-                                                personnes) | principale tech: Play framework
-                                            </li>
-                                            <li>Cofinoga : Mock d'Alfresco pour la marque blanche de l'espace client
-                                                Cofinoga + aides ponctuelles | principale tech: Liferay
-                                            </li>
-                                            <li>Casinodrive : Dans les locaux de CDiscount à partir de mai 2013 (équipe
-                                                de
-                                                10 personnes max avec du turnover tous les 3 mois) |
-                                                principale tech: SAP Netweaver
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="500">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <img src="images/slider/adacis.webp" width="130" height="49" alt="Adacis"
-                                                 class="company-logo" style="height: auto;width: 47px; top: 20px;"
-                                                 loading="lazy"/>
-                                            <div class="h5">Apprenti <span class="text-muted">@<a target="_blank"
-                                                                                                  rel="noopener noreferrer"
-                                                                                                  href="https://www.adacis.net">Adacis</a></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="d-none d-sm-block col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="h6 tech-stack">Environnement technique</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-auto text-center text-sm-start">
-                                            <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>Septembre
-                                                2009 - Septembre 2011
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm text-center text-sm-end mb-2 ">
-                                            <div class="d-block d-sm-none h6 tech-stack">Environnement technique</div>
-                                            <div class="text-muted text-small mb-3">Debian, J2EE, Apache, Tomcat,
-                                                Mod-jk,
-                                                JQuery, JQuery-UI, Curl
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Mission 1 : Conception et développement d'une solution J2EE pour la gestion et
-                                        l'affichage de flux
-                                        vidéos provenant de caméras de surveillance autoroutière depuis un navigateur
-                                        web<br/><br/>
-                                        Mission 2 : Conception et développement d'une solution PHP pour la gestion et
-                                        l'affichage sur un
-                                        mur d'écran de flux vidéo provenant de caméras de surveillance autoroutière
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shadow-1-strong bg-white my-4 px-5 py-4" id="education">
-                    <div class="education-section">
-                        <h2 class="h2 fw-light mb-4">Diplômes</h2>
-                        <div class="timeline">
-                            <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="h5">Master MIAGE (Méthodes Informatiques Appliquées à la Gestion des
-                                        Entreprises) <span
-                                                class="text-muted h6">à l'Université de Bordeaux</span>
-                                    </div>
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>2008 - 2011
-                                    </div>
-                                    <div>
-                                        En parallèle, j'ai :
-                                        <ul>
-                                            <li>participé à des projets de la Jumbo, la junior entreprise de la MIAGE
-                                            </li>
-                                            <li>travaillé chez McDonald's en tant qu'équipier en caisse pendant 4 mois
-                                            </li>
-                                            <li>été apprenti chez Adacis pendant 2 ans</li>
-                                        </ul>
-
-                                        <div class="mt-3 row">
-                                            <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 my-3 my-sm-auto">
-                                                <img class="img-fluid" src="images/msa.webp" width="329" height="153"
-                                                     title="Mutuelle Sociale Agricole"
-                                                     alt="Mutuelle Sociale Agricole" loading="lazy"/>
-                                            </div>
-                                            <div class="col my-auto">
-                                                Mon stage de Licence a été effectué à la Mutuelle Sociale Agricole.<br/>
-                                                Il consistait à traduire des robots AutoIt développés en robots Windev.
-                                                <!-- Et c'est dégueulasse comme projet !-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="h5">DUT Informatique <span class="text-muted h6">à l'IUT Informatique de Bordeaux</span>
-                                    </div>
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>2006 - 2008
-                                    </div>
-                                    <div>
-                                        J'y ai apprit tellement de choses, j'ai adoré y apprendre les bases de ce qui me
-                                        passionne encore aujourd'hui et j'y ai fait de superbes
-                                        rencontres.
-                                        En 2008, j'ai créé une équipe pour le challenge des IUT Informatique de France
-                                        et
-                                        nous sommes partis à Maubeuge pour remporter la compétition.
-                                        Il s'agissait d'une épreuve sur 24 h non stop avec 3 épreuves de 8 h chacune :
-                                        programmation de robots dans un jeu en réseau, développement d'un
-                                        site web sécurisé sans aide (livre/internet) et hacking.
-                                        On a eu droit à un petit paragraphe dans le journal du Labri (Laboration de
-                                        Recherche en Informatique de Bordeaux) : <a target="_blank"
-                                                                                    rel="noopener noreferrer"
-                                                                                    href="https://www.labri.fr/service/labri-hebdo/LaBRI-Hebdo-178.html">ici</a>
-                                        ainsi que dans le journal Sud-Ouest.
-                                        <div class="row mt-4">
-                                            <div class="col-md-6">
-                                                <a href="images/labri-hebdo.webp"
-                                                   data-lightbox="labri-hebdo"
-                                                   data-title="Article du Labri traitant du résultat du concours des IUT"
-                                                   data-alt="Article du Labri traitant du résultat du concours des IUT"
-                                                   class="d-block"
-                                                >
-                                                    <img src="images/labri-hebdo.webp" width="579" height="355"
-                                                         alt="Labri Hebdo" class="w-100 shadow-1-strong rounded"
-                                                         loading="lazy"/>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <a href="images/article-sud-ouest-concours-iut-de-france.webp"
-                                                   data-lightbox="sud-ouest"
-                                                   data-title="Article Sud-Ouest traitant du résultat du concours des IUT"
-                                                   data-alt="Article Sud-Ouest traitant du résultat du concours des IUT"
-                                                   class="d-block"
-                                                >
-                                                    <img src="images/article-sud-ouest-concours-iut-de-france.webp"
-                                                         width="789" height="369" alt="Article Sud-Ouest"
-                                                         class="w-100 shadow-1-strong rounded" loading="lazy"/>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="mt-4 row">
-                                            <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 my-3 my-sm-auto">
-                                                <img class="img-fluid" src="images/alterconseil.webp" width="800"
-                                                     height="710" title="Alter Conseil" alt="logo Alter conseil"
-                                                     loading="lazy"/>
-                                            </div>
-                                            <div class="col my-auto">
-                                                Mon stage de DUT a été effectué chez Alter Conseil.<br/>
-                                                Il consistait à développer une appli de gestion basée sur la DB Access
-                                                avec
-                                                le langage VBA.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
-                                <div class="timeline-head px-4 pt-3">
-                                    <div class="h5">Baccalauréat Scientifique <span
-                                            class="text-muted h6">au Lycée Camille-Jullian de Bordeaux</span></div>
-                                </div>
-                                <div class="timeline-body px-4 pb-4">
-                                    <div class="text-muted text-small mb-3"><i class="far fa-clock me-2"></i>2006</div>
-                                    <div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shadow-1-strong bg-white my-4 px-5 py-4 d-print-none" id="portfolio">
-                    <div class="portfolio-section">
-                        <h2 class="h2 fw-light mb-4">Portfolio</h2>
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a href="images/lumm.webp"
-                                   data-lightbox="exemple-lumm"
-                                   data-title="Tableau de bord utilisateur de l'application Lumm"
-                                   data-alt="Tableau de bord utilisateur de l'application Lumm"
-                                   class="d-block"
-                                >
-                                    <img class="img-fluid" src="images/lumm.webp" alt="exemple app Lumm" width="944"
-                                         height="458" loading="lazy"/>
-                                </a>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                                <div class="m-4 mt-md-2">
-                                    <h3>Lumm</h3>
-                                    <p class="text-teal text-small">Google Cloud AppEngine, Java, MySQL, Spring Boot,
-                                        Hibernate, Maven, Angular, SASS, Webpack, Gitlab CI</p>
-                                    <p class="text-muted">
-                                        Lumm est une plateforme d'aide au bien-être mental des salariés<br/>
-                                        Projet from scratch, tout à réaliser<br/>
-                                        De nombreux rôles utilisateurs, des API externes, du publipostage, de quoi
-                                        s'occuper.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-0 portfolio-reverse">
-                            <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                                <div class="m-4 mt-md-2 text-end">
-                                    <h3>Bary</h3>
-                                    <p class="text-teal text-small">Google Cloud AppEngine, Java, MySQL, Spring Boot,
-                                        Hibernate, Maven, Angular, SASS, Webpack, Gitlab CI</p>
-                                    <p class="text-muted">
-                                        Site e-commerce pour les transporteurs routiers<br/>
-                                        Rôle de fondateur, expérience enrichissante de l'entrepreneuriat<br/>
-                                        Projet from scratch, tout à réaliser<br/>
-                                        Participation au recrutement, aux présentations, aux salons, au commerce
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="images/bary.webp"
-                                   data-lightbox="exemple-bary"
-                                   data-title="Création d'une commande de transport sur l'application Bary"
-                                   data-alt="Création d'une commande de transport sur l'application Bary"
-                                   class="d-block"
-                                >
-                                    <img class="img-fluid" src="images/bary.webp" width="960" height="480"
-                                         alt="exemple app Bary" loading="lazy"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a href="images/casino.webp"
-                                   data-lightbox="exemple-casino"
-                                   data-title="Ecran d'accueil d'un drive sur CasinoDrive"
-                                   data-alt="Ecran d'accueil d'un drive sur CasinoDrive"
-                                   class="d-block"
-                                >
-                                    <img class="img-fluid" src="images/casino.webp" width="1007" height="839"
-                                         alt="exemple app CasinoDrive" loading="lazy"/>
-                                </a>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                                <div class="m-4 mt-md-2">
-                                    <h3>CasinoDrive, CasinoExpress, MesCoursesCasino</h3>
-                                    <p class="text-teal text-small">Java 1.4, SAP Netweaver 7.0, Struts, SAP CRM, Git,
-                                        JQuery, HTML5/CSS3, Sécurité, Borne de paiement (Java Applet)</p>
-                                    <p class="text-muted">
-                                        Développement des fronts des 3 sites d'e-commerce alimentaire du groupe Casino
-                                        (front + back)<br/>
-                                        Leader technique sur le projet (technos dépassées de 10 ans non documentées et
-                                        sans
-                                        support), représentant de l'équipe lors des réunions<br/>
-                                        Équipe projet fonctionnant sous un format agile (kanban, stand up meeting, TDD,
-                                        binomage, rétrospective, vision, etc.)<br/>
-                                        Mise en place de TUA (JUnit, Mockito compatible Java 1.4) et de tests Sélénium
-                                        (WebDriver)
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-0 portfolio-reverse">
-                            <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                                <div class="m-4 mt-md-2 text-end">
-                                    <h3>Cultura</h3>
-                                    <p class="text-teal text-small">Play framework 1.2, Hibernate 3, SQL Server, POI,
-                                        Bootstrap, JQuery, JQuery-UI, JqWidgets, HTML5, CSS3</p>
-                                    <p class="text-muted">
-                                        Application de gestion permettant de gérer les campagnes d'achat du service
-                                        achats<br/>
-                                        Montée en compétence sur le Framework Play et sur JqWidget<br/>
-                                        Premier support de l’équipe sur le projet<br/>
-                                        Gros travail sur la performance (des millions de lignes de données à traiter)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="images/cultura.webp"
-                                   data-lightbox="exemple-cultura"
-                                   data-title="Exemple non représentatif de l'application Cultura : un tableau JqWidget"
-                                   data-alt="Exemple non représentatif de l'application Cultura : un tableau JqWidget"
-                                   class="d-block"
-                                >
-                                    <img class="img-fluid" src="images/cultura.webp" width="860" height="330"
-                                         alt="exemple Cultura" loading="lazy"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a href="images/bordeaux.webp"
-                                   data-lightbox="exemple-bordeaux"
-                                   data-title="Page d'accueil du site de la mairie de Bordeaux"
-                                   data-alt="Page d'accueil du site de la mairie de Bordeaux"
-                                   class="d-block"
-                                >
-                                    <img class="img-fluid" src="images/bordeaux.webp" width="986" height="911"
-                                         alt="exemple bordeaux.fr" loading="lazy"/>
-                                </a>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                                <div class="m-4 mt-md-2">
-                                    <h3>Site de la mairie de Bordeaux</h3>
-                                    <p class="text-teal text-small">Java 1.6, JetSpeed 2, Spring MVC, JackRabbit,
-                                        Mockito,
-                                        HTML5, CSS3, JQuery, JQuery-UI</p>
-                                    <p class="text-muted">
-                                        Refonte complète du site de la mairie (changement de techno)<br/>
-                                        Travail en régie dans les locaux de la mairie à l'hôtel de ville.<br/>
-                                        Création de portlets de A à Z (Bean, Controller, JSP, contexte Spring, requêtes
-                                        Jackrabbit et Javadoc).<br/>
-                                        Backup de mon chef de projet<br/>
-                                        Transfert de compétences et suivi des stagiaires
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-0 portfolio-reverse">
-                            <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                                <div class="m-4 mt-md-2 text-end">
-                                    <h3>Application Vizird</h3>
-                                    <p class="text-teal text-small">Debian, J2EE, Apache, Tomcat, Mod-jk, JQuery,
-                                        JQuery-UI,
-                                        Curl</p>
-                                    <p class="text-muted">
-                                        Application web permettant l'affichage de flux vidéos provenant de caméras de
-                                        surveillance autoroutière<br/>
-                                        Installation d’un environnement Apache-Tomcat avec mod-jk<br/>
-                                        Développement de l’interface web avec le système d’identification du ministère
-                                        (Cerbère)<br/>
-                                        Création du cahier des charges avec le client (MEEDDAT) à partir de son
-                                        expression
-                                        du besoin et des docs utilisateurs<br/>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="images/vizird.webp"
-                                   data-lightbox="exemple-vizird"
-                                   data-title="Ecran d'affichage d'un flux vidéo de surveillance autoroutière visible en cliquant sur une caméra sur la carte"
-                                   data-alt="Ecran d'affichage d'un flux vidéo de surveillance autoroutière visible en cliquant sur une caméra sur la carte"
-                                   class="d-block"
-                                >
-                                    <img class="img-fluid" src="images/vizird.webp" width="1068" height="708"
-                                         alt="exemple Vizird" loading="lazy"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a href="images/cdiscount-alimentaire.webp"
-                                   data-lightbox="exemple-cdiscount-alimentaire"
-                                   data-title="Ecran d'affichage d'un rayon sur CDiscount dans la boutique alimentaire"
-                                   data-alt="Ecran d'affichage d'un rayon sur CDiscount dans la boutique alimentaire"
-                                   class="d-block"
-                                >
-                                    <img class="img-fluid" src="images/cdiscount-alimentaire.webp" width="1576"
-                                         height="726"
-                                         alt="exemple CDiscount franprix" loading="lazy"/>
-                                </a>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                                <div class="m-4 mt-md-2">
-                                    <h3>CDiscount</h3>
-                                    <p class="text-teal text-small">C#, .NET Framework 4.5, CDiscount Framework, HTML5,
-                                        CSS3, Responsive Design, JQuery</p>
-                                    <p class="text-muted">
-                                        CDiscount.com passe à la livraison de produits alimentaire via des boutiques
-                                        Franprix situées à Paris<br/>
-                                        Montée en compétences sur .Net, C# et le framework CDiscount<br/>
-                                        Équipe projet fonctionnant sous un format agile (kanban, stand up meeting, TDD,
-                                        binomage, rétrospective, vision, etc.)<br/>
-                                        Mise en place de tests unitaires et de tests d'interface (Selenium).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-0 portfolio-reverse">
-                            <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                                <div class="m-4 mt-md-2 text-end">
-                                    <h3>Cofinoga</h3>
-                                    <p class="text-teal text-small">Java 1.6, Junit 3, Mockito, Alfresco</p>
-                                    <p class="text-muted">
-                                        Refonte de l'espace client Cofinoga et du workflow Alfresco pour la mise en
-                                        place
-                                        d'une marque grise<br/>
-                                        Refactoring complet du Workflow Alfresco<br/>
-                                        Test Driven Development mis en place
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="images/cofinoga.webp"
-                                   data-lightbox="exemple-cofinoga"
-                                   data-title="Ecran d'accueil du site de Cofinoga"
-                                   data-alt="Ecran d'accueil du site de Cofinoga"
-                                   class="d-block"
-                                >
-                                    <img class="img-fluid" src="images/cofinoga.webp" width="981" height="745"
-                                         alt="exemple Cofinoga" loading="lazy"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shadow-1-strong bg-white my-4 px-5 py-4" id="recommandations">
-                    <div class="reference-section">
-                        <h2 class="h2 fw-light mb-4">Recommandations</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="d-flex mb-2">
-                                    <div class="avatar"><img src="images/reco/olivier.webp" width="60" height="60"
-                                                             alt="Olivier Croisier - Senior fullstack developer, Java expert & trainer, speaker"
-                                                             loading="lazy"/>
-                                    </div>
-                                    <div class="header-bio m-3 mb-0">
-                                        <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Olivier
-                                            Croisier</h3>
-                                        <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">
-                                            Senior
-                                            fullstack developer, Java expert & trainer, speaker</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-                                    <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">J'ai travaillé avec
-                                        Alexandre sur un projet legacy et à l'environnement technique
-                                        difficile.
-                                        Particulièrement persévérant face aux problèmes complexes, Alexandre s'interroge
-                                        sur
-                                        les meilleures pratiques et sait se remettre en question
-                                        face à de nouvelles propositions.
-                                        Ajoutez à ça une dose de bonne humeur, et vous comprendrez que j'ai trouvé en
-                                        Alexandre un collègue sympa et efficace !</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="d-flex mb-2 justify-content-center">
-                                    <div class="avatar"><img src="images/reco/julien.webp" width="60" height="60"
-                                                             alt="Julien Alart - Co-Founder @Lumm" loading="lazy"/>
-                                    </div>
-                                    <div class="header-bio m-3 mb-0">
-                                        <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Julien Alart</h3>
-                                        <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">
-                                            Co-Founder @Lumm</p>
-                                    </div>
-                                    <div class="avatar"><img src="images/reco/alexis.webp" width="60" height="60"
-                                                             alt="Alexis Barthélemy - Co-Founder @Lumm" loading="lazy"/>
-                                    </div>
-                                    <div class="header-bio m-3 mb-0">
-                                        <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Alexis
-                                            Barthélemy</h3>
-                                        <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">
-                                            Co-Founder @Lumm</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-                                    <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Travailler avec
-                                        Alexandre
-                                        est un vrai bonheur. C’est un développeur complet, aux
-                                        multiples compétences évidemment mais c’est aussi et surtout un partenaire
-                                        précieux
-                                        qui sait s’imprégner de toutes les problématiques d’une
-                                        entreprise et y apporter un esprit critique constructif et utile à tous. Son
-                                        engagement sans faille et sa capacité d’adaptation en font pour moi
-                                        un atout indéniable pour des structures en phase de développement.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="portrait tilt">
+                    <div class="portrait-ring"></div>
+                    <img src="images/avatar-hd.webp" width="640" height="895" alt="Portrait d'Alexandre Urbain">
+                    <span class="float-chip c1">Java · Spring Boot</span>
+                    <span class="float-chip c2">Angular</span>
+                    <span class="float-chip c3">Cloud GCP / AWS</span>
+                    <span class="float-chip c4">Archi hexagonale</span>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-<footer class="pt-4 pb-4 text-muted text-center d-print-none">
-    <div class="container">
-        <div class="my-3">
-            <div class="h4">Alexandre Urbain</div>
-            <div class="footer-nav">
-                <nav role="navigation">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/alexandreurbain/"
-                               rel="noopener noreferrer" title="Linkedin">
-                                <i class="fab fa-linkedin"></i><span class="menu-title">Linkedin</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://github.com/DeveloppeurGirondin"
-                               rel="noopener noreferrer" title="Github">
-                                <i class="fab fa-github"></i><span class="menu-title visually-hidden">Github</span>
-                            </a>
-                        </li>
+
+        <div class="container">
+            <dl class="stats">
+                <div class="stat reveal"><dt>Années d'expérience</dt><dd><span data-count="15">15</span></dd></div>
+                <div class="stat reveal"><dt>Clients payants sur Bary</dt><dd><span data-count="50">50</span>+</dd></div>
+                <div class="stat reveal"><dt>Postes de CTO / directeur technique</dt><dd><span data-count="4">4</span></dd></div>
+                <div class="stat reveal"><dt>Mois pour livrer la V1 de Lumm</dt><dd><span data-count="2">2</span></dd></div>
+            </dl>
+        </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="clients" aria-label="Entreprises pour lesquelles j'ai travaillé">
+        <p class="clients-title">Ils m'ont fait confiance</p>
+        <div class="marquee" data-speed="45">
+            <ul class="marquee-track">
+                <li class="logo-tile"><img src="images/slider/uff.webp" alt="UFF" title="UFF" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/bnpparibas.webp" alt="BNP Paribas" title="BNP Paribas" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/aubay.webp" alt="Aubay" title="Aubay" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/betclic.webp" alt="Betclic" title="Betclic" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/ippon.webp" alt="Ippon Technologies" title="Ippon Technologies" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/lumm.webp" alt="Lumm" title="Lumm" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/bary.webp" alt="Bary" title="Bary" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/softeam.webp" alt="Softeam Data" title="Softeam Data" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/orange.webp" alt="Orange" title="Orange" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/rcassocies.webp" alt="Roland Coiffe &amp; Associés" title="Roland Coiffe &amp; Associés" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+            </ul>
+        </div>
+        <div class="marquee reverse" data-speed="50">
+            <ul class="marquee-track">
+                <li class="logo-tile"><img src="images/slider/cdiscount.webp" alt="Cdiscount" title="Cdiscount" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/groupe-casino.webp" alt="Groupe Casino" title="Groupe Casino" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/sqli.webp" alt="SQLI" title="SQLI" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/mairie-de-bordeaux.webp" alt="Mairie de Bordeaux" title="Mairie de Bordeaux" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/cultura.webp" alt="Cultura" title="Cultura" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/cofinoga.webp" alt="Cofinoga" title="Cofinoga" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/adacis.webp" alt="Adacis" title="Adacis" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/meeddat.webp" alt="Ministère de l'Écologie, de l'Énergie, du Développement durable et de l'Aménagement du territoire" title="MEEDDAT" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/msa.webp" alt="Mutualité Sociale Agricole" title="MSA" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+                <li class="logo-tile"><img src="images/slider/alterconseil.webp" alt="Alter Conseil" title="Alter Conseil" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div>
+                <p class="kicker reveal">01 · À propos</p>
+                <h2 class="reveal">Du premier commit<br>à la <span class="grad">production</span>.</h2>
+                <div class="prose reveal">
+                    <p>Développeur senior fullstack avec 15 ans d'expérience, j'interviens depuis 2023 sous ma propre structure EgoTech en mission chez des startups comme des grands comptes du secteur bancaire.</p>
+                    <p>Mon parcours m'a fait passer par tous les rôles : développeur en SSII, tech lead en e-commerce, CTO de startup, co-fondateur d'un SaaS B2B que j'ai construit de zéro (Bary, 50+ clients payants dans le transport routier), puis directeur technique en ESN et lead dev senior chez des clients comme BNP Paribas ou l'UFF.</p>
+                </div>
+            </div>
+            <aside class="card contact-card reveal spotlight">
+                <div class="contact-head">
+                    <img src="images/EgoTech_logo-new.webp" width="60" height="74" alt="Logo EgoTech">
+                    <div>
+                        <strong>EgoTech</strong>
+                        <span>Alexandre Urbain · Fondateur</span>
+                    </div>
+                </div>
+                <ul class="contact-list">
+                    <li><svg><use href="#i-mail"/></svg><a href="mailto:alexandre@egotech.fr">alexandre@egotech.fr</a></li>
+                    <li><svg><use href="#i-phone"/></svg><a href="tel:+33642584916">06 42 58 49 16</a></li>
+                    <li><svg><use href="#i-pin"/></svg><span>Bordeaux, Nouvelle-Aquitaine, France</span></li>
+                    <li><svg><use href="#i-globe"/></svg><span>Anglais <em>(professionnel)</em> · Espagnol <em>(notions)</em></span></li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+        <div class="container">
+            <p class="kicker reveal">02 · Compétences</p>
+            <h2 class="reveal">Ce que je sais faire <span class="grad">concrètement</span></h2>
+
+            <div class="pillars">
+                <article class="card pillar reveal spotlight">
+                    <div class="pillar-ico"><svg><use href="#i-build"/></svg></div>
+                    <h3>Construire un produit de bout en bout</h3>
+                    <p>De l'architecture au déploiement cloud, en passant par le pilotage produit et les arbitrages techniques.</p>
+                </article>
+                <article class="card pillar reveal spotlight">
+                    <div class="pillar-ico"><svg><use href="#i-team"/></svg></div>
+                    <h3>Faire grandir une équipe</h3>
+                    <p>Recrutement, mentoring de juniors et de profils intermédiaires, accompagnement à la montée en compétences.</p>
+                </article>
+                <article class="card pillar reveal spotlight">
+                    <div class="pillar-ico"><svg><use href="#i-bridge"/></svg></div>
+                    <h3>Faire le pont entre la tech et le métier</h3>
+                    <p>Cadrage des besoins, priorisation, chiffrage, soutien à l'avant-vente.</p>
+                </article>
+            </div>
+
+            <div class="stack-grid">
+                <div class="card stack-card reveal spotlight">
+                    <h3><span class="dot d1"></span>Backend &amp; architecture</h3>
+                    <ul class="chips">
+                        <li class="hl">Java</li><li class="hl">Spring Boot</li><li>Kotlin</li><li>Maven</li>
+                        <li class="hl">Architecture hexagonale</li><li class="hl">Microservices</li><li>Monolithe multi-module</li>
+                        <li>RabbitMQ</li><li>Pub/Sub</li><li>Elasticsearch</li><li>Oracle / SQL</li><li>DDD</li>
                     </ul>
-                </nav>
+                </div>
+                <div class="card stack-card reveal spotlight">
+                    <h3><span class="dot d2"></span>Frontend</h3>
+                    <ul class="chips">
+                        <li class="hl">Angular</li><li>TypeScript</li><li class="hl">Web Components</li><li class="hl">Micro-frontends</li>
+                    </ul>
+                    <h3 class="mt"><span class="dot d3"></span>DevOps &amp; Cloud</h3>
+                    <ul class="chips">
+                        <li class="hl">CI/CD GitLab</li><li class="hl">Jenkins</li><li>Sonar</li><li>Docker</li>
+                        <li class="hl">Google Cloud</li><li class="hl">AWS</li><li>Debian</li><li>Cloudflare Tunnels</li>
+                    </ul>
+                </div>
+                <div class="card stack-card reveal spotlight">
+                    <h3><span class="dot d4"></span>Méthodes &amp; savoir-être</h3>
+                    <ul class="chips">
+                        <li class="hl">Agile / Scrum</li><li class="hl">Adaptabilité</li><li class="hl">Conception technique</li>
+                        <li>Code review</li><li>Tests automatisés</li><li>Mentoring</li><li>Recrutement</li><li>Avant-vente</li>
+                    </ul>
+                    <h3 class="mt"><span class="dot d5"></span>Exploration · IA</h3>
+                    <ul class="chips">
+                        <li>LLM locaux (LM Studio, Qwen Coder)</li><li>Aider</li><li>Claude Code</li><li>Auto-hébergement</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="stack-quote reveal"><span class="mono">// stack de prédilection</span> Java, Spring Boot, Angular, architectures hexagonales et microservices, CI/CD GitLab/Jenkins, Cloud Google et AWS.</p>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <p class="kicker reveal">03 · Parcours</p>
+                    <h2 class="reveal">15 ans, <span class="grad">tous les rôles</span>.</h2>
+                </div>
+                <div class="filters reveal" role="group" aria-label="Filtrer les expériences">
+                    <button type="button" class="filter is-active" data-filter="all">Tout</button>
+                    <button type="button" class="filter" data-filter="lead">Direction technique</button>
+                    <button type="button" class="filter" data-filter="dev">Développement</button>
+                </div>
+            </div>
+
+            <ol class="timeline">
+                <!-- EgoTech -->
+                <li class="xp reveal" data-kind="lead dev">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos"><span class="logo-tile sm"><img src="images/EgoTech_logo-new.webp" alt="EgoTech" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span></div>
+                            <div class="xp-title">
+                                <h3>Fondateur <span>@ EgoTech</span></h3>
+                                <p class="xp-meta"><time>mars 2023 — aujourd'hui</time> · Bordeaux, Nouvelle-Aquitaine</p>
+                            </div>
+                            <span class="badge now">En cours</span>
+                        </header>
+                        <p>EgoTech est ma structure de prestation, sous laquelle j'opère mes missions de développement et de lead technique chez mes clients (UFF, BNP Paribas, Aubay).</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <p>C'est aussi mon espace d'exploration technique. J'y consacre du temps à la veille et à l'expérimentation sur les sujets qui me semblent structurants pour les années à venir :</p>
+                                <ul>
+                                    <li><strong>IA et agents de code</strong> : exploration des LLM locaux (LM Studio, modèles type Qwen Coder), des frameworks d'agents autonomes (Aider, Claude Code), et plus largement de l'impact de l'IA sur les pratiques de développement.</li>
+                                    <li><strong>Auto-hébergement et architecture maison</strong> : montage et exploitation de mon propre environnement de développement haute performance, configuration CI/CD, déploiement via tunnels (Cloudflare), gestion d'infrastructure personnelle.</li>
+                                    <li><strong>Side projects techniques</strong> : terrains de jeu pour tester des stacks, valider des concepts d'architecture et garder une pratique du code en dehors des contraintes client.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+                </li>
+
+                <!-- UFF -->
+                <li class="xp reveal" data-kind="lead dev">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos">
+                                <span class="logo-tile sm"><img src="images/logos/uff.webp" alt="UFF" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                                <span class="logo-tile sm"><img src="images/logos/aubay.webp" alt="Aubay" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                            </div>
+                            <div class="xp-title">
+                                <h3>Lead Dev Fullstack Senior <span>@ UFF - Banque conseil en gestion de patrimoine</span></h3>
+                                <p class="xp-meta"><time>septembre 2024 — juillet 2026</time> · Ville de Paris · via Aubay</p>
+                            </div>
+                        </header>
+                        <p>Lead Dev Fullstack Senior sur deux produits stratégiques de l'UFF : un outil de suivi des actes et un nouvel espace client. Les deux projets ont été démarrés depuis un dépôt Git vide (ossature technique uniquement), et sont aujourd'hui en production.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <p class="muted">Mission réalisée via Aubay dans le cadre de mon activité EgoTech.</p>
+                                <h4>Mon rôle au quotidien</h4>
+                                <ul>
+                                    <li>Conception technique des solutions et coordination avec les équipes transverses (Socle, UX, Infra).</li>
+                                    <li>Participation active au cadrage avec le métier : propositions de redécoupage des US, chiffrages, planification des sprints.</li>
+                                    <li>Investigation approfondie des services transverses pour comprendre leurs capacités, identification des manques et formalisation des demandes d'évolution auprès des équipes responsables.</li>
+                                    <li>Développement sur les sujets les plus structurants, code review des MR de l'équipe, déploiement sur la chaîne de livraison interne.</li>
+                                    <li>Accompagnement et montée en compétences de deux développeurs juniors intégrés à mes côtés sur les deux missions : revues de code, sessions techniques, partage des bonnes pratiques de développement.</li>
+                                </ul>
+                                <h4>Quelques points marquants</h4>
+                                <ul>
+                                    <li>Construction et mise en production des deux applications depuis zéro, dans un contexte bancaire avec ses contraintes propres (sécurité, conformité, intégration au SI existant).</li>
+                                    <li>Architecture frontend moderne à base de micro-frontends et de Web Components, permettant l'intégration progressive aux portails UFF.</li>
+                                    <li>Optimisations de requêtes SQL complexes avec création d'une table temporaire sur un serveur Oracle.</li>
+                                    <li>Participation à la croissance de l'équipe Aubay sur le compte, avec plusieurs profils intégrés au fil des besoins.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Java</li><li>Spring Boot</li><li>Monolithe multi-module</li><li>Angular</li><li>Web Components</li><li>Micro-frontends</li><li>Jenkins</li><li>GitLab</li></ul>
+                    </article>
+                </li>
+
+                <!-- Aubay -->
+                <li class="xp reveal" data-kind="lead">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos"><span class="logo-tile sm"><img src="images/logos/aubay.webp" alt="Aubay" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span></div>
+                            <div class="xp-title">
+                                <h3>Directeur technique <span>@ Aubay</span></h3>
+                                <p class="xp-meta"><time>octobre 2023 — juillet 2026</time> · Bordeaux</p>
+                            </div>
+                        </header>
+                        <p>Au sein de l'équipe de direction de l'agence Bordelaise d'Aubay (30+ développeurs), j'assure un rôle de directeur technique externe, sur les volets avant-vente, recrutement, encadrement technique et accompagnement des consultants.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <h4>Mes responsabilités</h4>
+                                <ul>
+                                    <li>Soutien à l'activité commerciale : participation à l'avant-vente, soutenance lors de présentations de missions aux clients/futurs clients.</li>
+                                    <li>Recrutement : participation aux entretiens techniques des candidats, évaluation du niveau, contribution à la décision d'embauche (pour les agences de Bordeaux et de Nantes).</li>
+                                    <li>Accompagnement des consultants : aide à la montée en compétences, soutien à la préparation aux entretiens, appui dans la recherche de mission.</li>
+                                </ul>
+                                <h4>Quelques points marquants</h4>
+                                <ul>
+                                    <li>4 consultants en inter-contrat positionnés en mission grâce à un accompagnement individualisé.</li>
+                                    <li>Intégration systématique d'un développeur junior à mes côtés sur chacune de mes propres missions client (UFF - Suivi des Actes, UFF - Espace Client, BNP Paribas), permettant à 3 profils juniors d'évoluer sur des stacks modernes en contexte grand compte.</li>
+                                    <li>Contribution à l'amélioration de l'auto-formation des consultants en période inter-contrat (mini formations, réponses aux questions, partage de ressources utiles).</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+                </li>
+
+                <!-- BNP -->
+                <li class="xp reveal" data-kind="dev">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos">
+                                <span class="logo-tile sm"><img src="images/logos/bnpparibas.webp" alt="BNP Paribas" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                                <span class="logo-tile sm"><img src="images/logos/aubay.webp" alt="Aubay" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                            </div>
+                            <div class="xp-title">
+                                <h3>Développeur Senior Fullstack Java/Angular <span>@ BNP Paribas Personal Finance</span></h3>
+                                <p class="xp-meta"><time>octobre 2023 — mai 2024</time> · Mérignac · via Aubay</p>
+                            </div>
+                        </header>
+                        <p>Mission au sein de la tribe Auto de BNP Paribas Personal Finance, en charge de cinq applications dédiées à la prise de lead dans le crédit automobile.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <p class="muted">Mission réalisée via Aubay dans le cadre de mon activité EgoTech.</p>
+                                <h4>Mon rôle</h4>
+                                <ul>
+                                    <li>Développement fullstack sur les applications Java / Spring Boot / Angular du périmètre.</li>
+                                    <li>Montée de version successives d'une application de Java 8 → 11 → 17 tout en montant la version de Spring Boot 2.7.X → 3.2.X.</li>
+                                    <li>Intervention ponctuelle sur les autres briques du SI (PHP, Liferay) selon les besoins de la squad.</li>
+                                    <li>Appui au Lead Dev en place sur les sujets techniques complexes et les prises de décision d'architecture.</li>
+                                    <li>Accompagnement d'un développeur junior intégré à mes côtés sur la mission : code review, sessions techniques, partage de bonnes pratiques.</li>
+                                </ul>
+                                <p class="muted">Contexte grand compte bancaire avec ses contraintes propres (sécurité, conformité, intégration au SI existant).</p>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Java</li><li>Spring Boot</li><li>Angular</li><li>PHP</li><li>Liferay</li><li>Mobile natif</li></ul>
+                    </article>
+                </li>
+
+                <!-- Betclic -->
+                <li class="xp reveal" data-kind="dev">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos">
+                                <span class="logo-tile sm"><img src="images/logos/betclic.webp" alt="Betclic" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                                <span class="logo-tile sm"><img src="images/logos/ippon.webp" alt="Ippon Technologies" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                            </div>
+                            <div class="xp-title">
+                                <h3>Développeur Senior Fullstack Kotlin/Angular <span>@ Betclic Group</span></h3>
+                                <p class="xp-meta"><time>avril 2023 — octobre 2023</time> · Bordeaux · via Ippon</p>
+                            </div>
+                        </header>
+                        <p>Deux missions successives de trois mois au sein du périmètre Engagement &amp; Gamification de Betclic, dans un environnement tech reconnu pour son niveau d'exigence et sa modernité.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <p class="muted">Mission réalisée via Ippon dans le cadre de mon activité EgoTech.</p>
+                                <h4>Première mission — Équipe Enrich (backend Kotlin)</h4>
+                                <p>Développement backend sur les services de gamification de la plateforme. Environnement microservices sur AWS, communication événementielle via Pub/Sub, architecture hexagonale, bases de données dédiées par service, équipes pleinement autonomes côté DevOps (staging, recette, preprod, production).</p>
+                                <h4>Seconde mission — Équipe Engage (frontend Angular)</h4>
+                                <p>Développement Angular dans le cadre de la refonte technique d'un back-office métier.</p>
+                                <h4>Ce que j'en retiens</h4>
+                                <p>Une expérience riche techniquement et humainement, qui m'a permis de me remettre à niveau sur les pratiques industrialisées des grandes structures tech : tests automatisés à tous les niveaux, revues de code rigoureuses, pipeline CI/CD mature, autonomie d'équipe sur le delivery de bout en bout.</p>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Kotlin</li><li>Spring Boot</li><li>Angular</li><li>AWS</li><li>Pub/Sub</li><li>Architecture hexagonale</li><li>Microservices</li><li>CI/CD</li></ul>
+                    </article>
+                </li>
+
+                <!-- Lumm -->
+                <li class="xp reveal" data-kind="lead">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos"><span class="logo-tile sm"><img src="images/logos/lumm.webp" alt="Lumm" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span></div>
+                            <div class="xp-title">
+                                <h3>CTO - Directeur des technologies <span>@ Lumm</span></h3>
+                                <p class="xp-meta"><time>février 2022 — mars 2023</time> · Région de Bordeaux</p>
+                            </div>
+                        </header>
+                        <p>Lumm proposait un service digital de bien-être mental pour les collaborateurs en entreprise, combinant des parcours thérapeutiques personnalisés, des consultations en visio avec des thérapeutes et des outils digitaux d'accompagnement.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <h4>Mes responsabilités en tant que CTO</h4>
+                                <ul>
+                                    <li>Définition de la stack technique et de l'architecture de la plateforme SaaS, de zéro.</li>
+                                    <li>Construction et pilotage de l'équipe technique : recrutement et management de 3 développeurs.</li>
+                                    <li>Pilotage du delivery : suivi des sprints, indicateurs techniques, collaboration étroite avec les Product Owners.</li>
+                                    <li>Conception produit : participation active à la définition des parcours utilisateurs, conception de fonctionnalités clés comme la "boîte à outils" permettant aux thérapeutes de personnaliser les exercices et lectures proposés aux patients entre les étapes du parcours.</li>
+                                    <li>Conception et implémentation du système de crédits d'utilisation, mécanisme central du modèle économique qui présentait une complexité significative à clarifier pour les clients.</li>
+                                </ul>
+                                <h4>Quelques points marquants</h4>
+                                <ul>
+                                    <li>Livraison de la V1 en 2 mois, permettant un lancement commercial rapide.</li>
+                                    <li>Plateforme déployée en production et opérée auprès de clients réels (entreprises clientes utilisant le produit pour leurs collaborateurs).</li>
+                                    <li>Architecture cloud scalable et sécurisée, conçue pour répondre aux exigences propres au secteur de la santé (confidentialité, données sensibles).</li>
+                                    <li>Produit reconnu par les investisseurs lors de la levée comme le plus abouti techniquement de son segment.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Java</li><li>Spring Boot</li><li>Angular</li><li>Google Cloud</li><li>CI/CD GitLab</li></ul>
+                    </article>
+                </li>
+
+                <!-- Bary -->
+                <li class="xp reveal" data-kind="lead">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos"><span class="logo-tile sm"><img src="images/logos/bary.webp" alt="Bary" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span></div>
+                            <div class="xp-title">
+                                <h3>Co-fondateur et CTO - Directeur des technologies <span>@ BARY</span></h3>
+                                <p class="xp-meta"><time>mars 2019 — février 2022</time> · Région de Bordeaux</p>
+                            </div>
+                        </header>
+                        <p>Bary est une plateforme SaaS B2B qui digitalise la relation commerciale entre transporteurs routiers et leurs clients : visibilité commerciale en ligne, prise de commande, paiement, facturation, automatisation des tâches administratives.</p>
+                        <p>J'ai co-fondé l'entreprise et porté l'ensemble du volet technique, du premier commit jusqu'à l'exploitation de la plateforme en production avec plus de 50 clients payants.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <h4>Mon rôle en tant que CTO</h4>
+                                <ul>
+                                    <li>Construction de la plateforme de zéro : architecture, développement, mise en production, exploitation. Seul développeur au démarrage, puis montée en charge progressive de l'équipe technique.</li>
+                                    <li>Définition de la stack et de l'infrastructure : Java, Spring Boot, Angular, déploiement sur Google Cloud, CI/CD GitLab.</li>
+                                    <li>Recrutement et management d'une équipe technique allant jusqu'à 5 développeurs, mise en place des process DevOps et de l'organisation agile.</li>
+                                    <li>Pilotage du delivery : planification et pilotage des sprints, arbitrages techniques et fonctionnels, qualité du produit.</li>
+                                </ul>
+                                <h4>Mon rôle en tant que co-fondateur</h4>
+                                <ul>
+                                    <li>Participation aux décisions stratégiques de l'entreprise aux côtés des autres associés.</li>
+                                    <li>Présence terrain : rendez-vous clients dans plusieurs villes en France, salons professionnels du secteur transport.</li>
+                                    <li>Présentation du business plan dans le cadre de l'incubation de l'entreprise et lors de la recherche de financement.</li>
+                                </ul>
+                                <h4>Quelques points marquants</h4>
+                                <ul>
+                                    <li>Plateforme SaaS portée à 50+ clients payants dans un marché B2B traditionnellement peu digitalisé.</li>
+                                    <li>Construction et opération de l'intégralité de la stack technique en autonomie sur les six premiers mois.</li>
+                                    <li>Recrutement et encadrement d'une équipe technique qui a grandi avec le produit.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Java 11</li><li>Spring Boot</li><li>Angular</li><li>Maven</li><li>GitLab CI</li><li>Google Cloud Platform</li></ul>
+                    </article>
+                </li>
+
+                <!-- Softeam -->
+                <li class="xp reveal" data-kind="dev">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos">
+                                <span class="logo-tile sm"><img src="images/logos/softeam.webp" alt="Softeam Data" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                                <span class="logo-tile sm"><img src="images/logos/orange.webp" alt="Orange" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                            </div>
+                            <div class="xp-title">
+                                <h3>Senior Java Consultant <span>@ SOFTEAM Data</span></h3>
+                                <p class="xp-meta"><time>janvier 2019 — avril 2019</time> · Région de Bordeaux</p>
+                            </div>
+                        </header>
+                        <p>Mission de conseil chez Orange Applications for Business sur le produit Contact Everyone, plateforme de communication multicanale B2B.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <h4>Contexte</h4>
+                                <p>Intégration au sein d'une équipe d'une dizaine de personnes, autonome et expérimentée, sur une stack technique moderne et industrialisée pour l'époque.</p>
+                                <h4>Pratiques de l'équipe</h4>
+                                <p>Tests unitaires et d'intégration systématiques, tests frontend automatisés, DDD, code review en triple relecture, environnement dockerisé, communication asynchrone via RabbitMQ.</p>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Java</li><li>Spring Boot</li><li>Angular</li><li>RabbitMQ</li><li>Docker</li></ul>
+                    </article>
+                </li>
+
+                <!-- RC & Associés -->
+                <li class="xp reveal" data-kind="lead">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos"><span class="logo-tile sm"><img src="images/logos/rcassocies.webp" alt="Roland Coiffe &amp; Associés" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span></div>
+                            <div class="xp-title">
+                                <h3>CTO - Directeur des technologies <span>@ Roland Coiffe &amp; Associés</span></h3>
+                                <p class="xp-meta"><time>juillet 2016 — décembre 2018</time> · Quinsac</p>
+                            </div>
+                        </header>
+                        <p>Responsable de l'ensemble des projets informatiques de l'entreprise, en autonomie sur la conception, le développement et la livraison d'applications internes au service des équipes commerciales, logistiques et financières.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <h4>Applications conçues et développées</h4>
+                                <ul>
+                                    <li><strong>Winestock</strong> — Cœur de l'outillage métier : agrégation en temps réel des stocks internes et fournisseurs depuis des sources hétérogènes (XLS, CSV, TXT via HTTP, FTP ou upload), exposés via une recherche fulltext ultra-rapide reposant sur Elasticsearch.</li>
+                                    <li><strong>Cashflow Manager</strong> — Détection automatique des défauts de paiement clients et génération de mails de relance personnalisés.</li>
+                                    <li><strong>Rupture Solver</strong> — Remontée des ruptures de stock avec proposition automatique de solutions par croisement stock disponible / commandes d'achat à venir.</li>
+                                    <li><strong>Transport Manager</strong> — Gestion logistique complète : planification des enlèvements et expéditions, communication entrepôt, bordereaux de livraison intégrant les spécificités métier (douane, DAE, DSA).</li>
+                                </ul>
+                                <h4>Infrastructure et industrialisation, de zéro</h4>
+                                <p>Spécification et commande du serveur d'hébergement, installation Debian, mise en place d'une chaîne CI/CD Jenkins maison avec Sonar pour la qualité, connexions aux prestataires externes (échanges de fichiers, appels web automatisés).</p>
+                                <h4>Management</h4>
+                                <p>Encadrement d'un développeur freelance sur une mission ponctuelle et de deux stagiaires : cadrage des sujets, suivi des livrables, code review.</p>
+                                <h4>Au-delà de la technique</h4>
+                                <p>Analyse des besoins métiers, priorisation et chiffrage des solutions en lien direct avec la direction.</p>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Java 8</li><li>Spring Boot</li><li>Angular</li><li>Elasticsearch</li><li>Jenkins</li><li>Sonar</li><li>Debian</li></ul>
+                    </article>
+                </li>
+
+                <!-- Cdiscount -->
+                <li class="xp reveal" data-kind="lead">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos">
+                                <span class="logo-tile sm"><img src="images/logos/cdiscount.webp" alt="Cdiscount" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                                <span class="logo-tile sm"><img src="images/slider/groupe-casino.webp" alt="Groupe Casino" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>
+                            </div>
+                            <div class="xp-title">
+                                <h3>Chef de projet technique <span>@ Cdiscount</span></h3>
+                                <p class="xp-meta"><time>octobre 2015 — juin 2016</time> · Région de Bordeaux</p>
+                            </div>
+                        </header>
+                        <p>Leadership technique au sein d'une équipe de 10 personnes (scrum master, product owner, développeurs) en charge des solutions e-commerce alimentaires du Groupe Casino, plateformes opérées par Cdiscount.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <h4>Périmètre</h4>
+                                <ul>
+                                    <li>Sites e-commerce Casinodrive.fr, Casinoexpress.fr et MesCoursesCasino.fr.</li>
+                                    <li>Application des bornes Casinodrive en magasin (application web embarquant une Applet Java en environnement multi-threadé).</li>
+                                    <li>Webservices exposés à l'application mobile MCasino.</li>
+                                </ul>
+                                <h4>Mes responsabilités</h4>
+                                <ul>
+                                    <li>Leadership technique de l'équipe : résolution des sujets les plus complexes, accompagnement des développeurs, encadrement dans un contexte de turnover récurrent.</li>
+                                    <li>Maintenance évolutive des sites e-commerce et de l'application des bornes.</li>
+                                    <li>Participation aux réunions client et au recrutement des nouveaux membres de l'équipe.</li>
+                                </ul>
+                                <h4>Le contexte particulier de la mission</h4>
+                                <p>Travail sur une stack technique de 10 ans (Java 1.4), sans support éditeur et avec très peu de documentation disponible en ligne. Cet environnement contraint a été l'occasion de pousser des pratiques modernes là où c'était possible : mise en place de tests automatisés malgré la pauvreté de l'outillage, résolution de problèmes techniques en autonomie, mobilisation de l'équipe autour de l'agilité pour absorber les difficultés organisationnelles.</p>
+                                <h4>Ce que j'en retiens</h4>
+                                <p>Ma première vraie expérience de leadership technique, dans un contexte compliqué qui m'a appris à porter une équipe dans la durée.</p>
+                                <p>Et au-delà du contexte technique : dix ans plus tard, je suis toujours en relation avec des membres de l'équipe alors que nos chemins se sont séparés. C'est ce qui arrive parfois quand on traverse les difficultés ensemble.</p>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Java 1.4</li><li>SAP Netweaver</li><li>Applet Java</li><li>Webservices</li><li>Agilité</li></ul>
+                    </article>
+                </li>
+
+                <!-- SQLI -->
+                <li class="xp reveal" data-kind="dev">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos"><span class="logo-tile sm"><img src="images/logos/sqli.webp" alt="SQLI" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span></div>
+                            <div class="xp-title">
+                                <h3>Ingénieur en conception et développements → Tech Lead <span>@ SQLI</span></h3>
+                                <p class="xp-meta"><time>octobre 2011 — septembre 2015</time> · Région de Pessac</p>
+                            </div>
+                        </header>
+                        <p>Quatre années chez SQLI sur des missions techniques variées, avec une montée en responsabilités progressive jusqu'au rôle de Tech Lead.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <h4>Missions principales</h4>
+                                <ul>
+                                    <li><strong>bordeaux.fr</strong> — Refonte technique complète du site de la Ville de Bordeaux, au sein d'une équipe de 4 personnes. Stack Java EE / JSP avec intégration Alfresco pour la gestion documentaire.</li>
+                                    <li><strong>Cofinoga</strong> — Interventions ponctuelles sur la plateforme du client. Stack Liferay et Struts 1.2.</li>
+                                    <li><strong>Cultura</strong> — Développement d'une application interne dédiée au service achat pour la gestion des campagnes commerciales nationales, en équipe de 7. Stack Play Framework.</li>
+                                    <li><strong>Casinodrive (chez Cdiscount)</strong> — Mission longue durée sur la plateforme e-commerce du Groupe Casino, équipe pouvant aller jusqu'à 10 personnes avec un turnover récurrent. Stack SAP Netweaver / Java 1.4, environnement technique daté et exigeant.</li>
+                                </ul>
+                                <h4>Évolution</h4>
+                                <p>Passage du rôle d'ingénieur en conception et développement à celui de Tech Lead sur la mission Casinodrive : prise en charge des sujets techniques les plus complexes, accompagnement de l'équipe dans un contexte mouvant (turnover, contraintes techno, blocages fonctionnels), participation aux décisions techniques et organisationnelles.</p>
+                                <h4>Ce que j'en retiens</h4>
+                                <p>Quatre ans dans la même ESN à enchaîner des contextes très différents, ce qui m'a appris à m'adapter rapidement à des stacks nouvelles et à des cultures d'équipe variées. La diversité des environnements (Alfresco, Liferay, Play Framework, SAP Netweaver) m'a donné une plasticité technique qui me sert encore aujourd'hui.</p>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>Java</li><li>Java EE</li><li>JSP</li><li>Alfresco</li><li>Liferay</li><li>Struts</li><li>Play Framework</li><li>SAP Netweaver</li></ul>
+                    </article>
+                </li>
+
+                <!-- Adacis -->
+                <li class="xp reveal" data-kind="dev">
+                    <div class="xp-marker"></div>
+                    <article class="card xp-card spotlight">
+                        <header class="xp-head">
+                            <div class="xp-logos"><span class="logo-tile sm"><img src="images/slider/adacis.webp" alt="Adacis" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span></div>
+                            <div class="xp-title">
+                                <h3>Apprenti ingénieur — Conception &amp; développement <span>@ ADACIS</span></h3>
+                                <p class="xp-meta"><time>septembre 2009 — septembre 2011</time> · Saint-Médard-en-Jalles</p>
+                            </div>
+                        </header>
+                        <p>Apprentissage de deux ans réalisé en parallèle de mon Master MIAGE, sur des projets pour le secteur de la surveillance autoroutière.</p>
+                        <details>
+                            <summary>Lire la suite</summary>
+                            <div class="xp-more">
+                                <h4>Mission 1 — Application web J2EE</h4>
+                                <p>Conception et développement d'une solution navigateur pour la consultation en direct des flux vidéo des caméras de surveillance autoroutière.</p>
+                                <h4>Mission 2 — Solution d'affichage PHP</h4>
+                                <p>Conception et développement d'une application PHP pour l'affichage des mêmes flux vidéo sur un mur d'écrans, à destination des centres d'exploitation.</p>
+                            </div>
+                        </details>
+                        <ul class="chips sm"><li>J2EE</li><li>PHP</li><li>Apache / Tomcat</li><li>Debian</li></ul>
+                    </article>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section alt" id="work">
+        <div class="container">
+            <p class="kicker reveal">04 · Réalisations</p>
+            <h2 class="reveal">Quelques projets <span class="grad">livrés</span></h2>
+
+            <div class="work-grid">
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/portfolio/betclic-goal-booster.jpg" data-lightbox data-caption="Betclic — Goal Booster">
+                        <img src="images/portfolio/betclic-goal-booster.jpg" alt="Aperçu du jeu Goal Booster de Betclic" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/portfolio/betclic-goal-booster.jpg"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Betclic — Goal Booster</h3>
+                        <p>Jeu développé au sein du périmètre Engagement &amp; Gamification : le joueur sélectionne ses buteurs, choisit sa mise et devine le moment de leur but pour décrocher jusqu'à 100 000 € en plus de ses gains.</p>
+                        <a class="link" href="https://x.com/Betclic/status/2066845749942362491/video/1" target="_blank" rel="noopener noreferrer">Voir la vidéo de présentation <svg><use href="#i-arrow"/></svg></a>
+                        <ul class="chips sm"><li>Kotlin</li><li>AWS</li><li>Pub/Sub</li><li>Angular</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/lumm.webp" data-lightbox data-caption="Tableau de bord utilisateur de l'application Lumm">
+                        <img src="images/lumm.webp" width="944" height="458" alt="Tableau de bord utilisateur de l'application Lumm" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/lumm.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Lumm</h3>
+                        <p>Plateforme SaaS de bien-être mental des collaborateurs. Livraison de la V1 en 2 mois, système de crédits d'utilisation, "boîte à outils" pour les thérapeutes.</p>
+                        <ul class="chips sm"><li>Java</li><li>Spring Boot</li><li>Angular</li><li>Google Cloud</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/bary.webp" data-lightbox data-caption="Création d'une commande de transport sur l'application Bary">
+                        <img src="images/bary.webp" width="960" height="480" alt="Création d'une commande de transport sur l'application Bary" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/bary.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Bary</h3>
+                        <p>SaaS B2B pour les transporteurs routiers, construit du premier commit à la production. Plateforme portée à 50+ clients payants.</p>
+                        <ul class="chips sm"><li>Java 11</li><li>Spring Boot</li><li>Angular</li><li>GCP</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/portfolio/winestock.webp" data-lightbox data-caption="Winestock — Roland Coiffe &amp; Associés">
+                        <img src="images/portfolio/winestock.webp" alt="Capture de l'application Winestock" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/portfolio/winestock.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Winestock</h3>
+                        <p>Agrégation en temps réel des stocks internes et fournisseurs depuis des sources hétérogènes, exposés via une recherche fulltext ultra-rapide reposant sur Elasticsearch.</p>
+                        <ul class="chips sm"><li>Java 8</li><li>Spring Boot</li><li>Elasticsearch</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/casino.webp" data-lightbox data-caption="Écran d'accueil d'un drive sur CasinoDrive">
+                        <img src="images/casino.webp" width="1007" height="839" alt="Écran d'accueil d'un drive sur CasinoDrive" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/casino.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Casinodrive · Casinoexpress · MesCoursesCasino</h3>
+                        <p>Sites e-commerce alimentaires du Groupe Casino, application des bornes en magasin et webservices de l'application mobile MCasino.</p>
+                        <ul class="chips sm"><li>Java 1.4</li><li>SAP Netweaver</li><li>Applet Java</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/cdiscount-alimentaire.webp" data-lightbox data-caption="Affichage d'un rayon de la boutique alimentaire Cdiscount">
+                        <img src="images/cdiscount-alimentaire.webp" width="1576" height="726" alt="Affichage d'un rayon de la boutique alimentaire Cdiscount" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/cdiscount-alimentaire.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Cdiscount — Alimentaire</h3>
+                        <p>Solutions e-commerce alimentaires opérées par Cdiscount pour le Groupe Casino.</p>
+                        <ul class="chips sm"><li>E-commerce</li><li>Tests automatisés</li><li>Agilité</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/bordeaux.webp" data-lightbox data-caption="Page d'accueil du site de la Ville de Bordeaux">
+                        <img src="images/bordeaux.webp" width="986" height="911" alt="Page d'accueil du site de la Ville de Bordeaux" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/bordeaux.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>bordeaux.fr</h3>
+                        <p>Refonte technique complète du site de la Ville de Bordeaux, au sein d'une équipe de 4 personnes.</p>
+                        <ul class="chips sm"><li>Java EE</li><li>JSP</li><li>Alfresco</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/cultura.webp" data-lightbox data-caption="Application interne Cultura (tableau JqWidgets)">
+                        <img src="images/cultura.webp" width="860" height="330" alt="Application interne Cultura" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/cultura.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Cultura</h3>
+                        <p>Application interne dédiée au service achat pour la gestion des campagnes commerciales nationales, en équipe de 7.</p>
+                        <ul class="chips sm"><li>Play Framework</li><li>Java</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/cofinoga.webp" data-lightbox data-caption="Écran d'accueil du site Cofinoga">
+                        <img src="images/cofinoga.webp" width="981" height="745" alt="Écran d'accueil du site Cofinoga" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/cofinoga.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Cofinoga</h3>
+                        <p>Interventions sur la plateforme du client.</p>
+                        <ul class="chips sm"><li>Liferay</li><li>Struts 1.2</li><li>Alfresco</li></ul>
+                    </div>
+                </article>
+                <article class="card work reveal spotlight">
+                    <a class="work-media" href="images/vizird.webp" data-lightbox data-caption="Affichage d'un flux vidéo de surveillance autoroutière">
+                        <img src="images/vizird.webp" width="1068" height="708" alt="Application Vizird : flux vidéo de surveillance autoroutière" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+                        <span class="ph" data-file="images/vizird.webp"></span>
+                    </a>
+                    <div class="work-body">
+                        <h3>Vizird</h3>
+                        <p>Solution navigateur pour la consultation en direct des flux vidéo des caméras de surveillance autoroutière, puis affichage sur un mur d'écrans.</p>
+                        <ul class="chips sm"><li>J2EE</li><li>PHP</li><li>Tomcat</li></ul>
+                    </div>
+                </article>
             </div>
         </div>
-        <div class="text-small">
-            <div class="mb-1">&copy; Material Resume. All rights reserved.</div>
-            <div>Design - <a href="https://templateflip.com/" target="_blank" rel="noopener noreferrer">TemplateFlip</a>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+        <div class="container">
+            <p class="kicker reveal">05 · Formation</p>
+            <h2 class="reveal">Formation &amp; <span class="grad">distinction</span></h2>
+
+            <div class="edu-grid">
+                <div class="edu-list">
+                    <article class="card edu reveal spotlight">
+                        <div class="edu-ico"><svg><use href="#i-cap"/></svg></div>
+                        <div>
+                            <p class="edu-date mono">2008 — 2011</p>
+                            <h3>Master MIAGE</h3>
+                            <p class="edu-school">Université de Bordeaux</p>
+                            <p>Méthodes informatiques appliquées à la gestion, spécialité Systèmes d'Information des Entreprises. En parallèle : projets pour Jumbo, la junior entreprise de la MIAGE, et apprentissage chez Adacis.</p>
+                        </div>
+                    </article>
+                    <article class="card edu reveal spotlight">
+                        <div class="edu-ico"><svg><use href="#i-cap"/></svg></div>
+                        <div>
+                            <p class="edu-date mono">2006 — 2008</p>
+                            <h3>DUT Informatique</h3>
+                            <p class="edu-school">Université de Bordeaux · IUT Informatique</p>
+                        </div>
+                    </article>
+                    <article class="card edu reveal spotlight">
+                        <div class="edu-ico"><svg><use href="#i-cap"/></svg></div>
+                        <div>
+                            <p class="edu-date mono">2006</p>
+                            <h3>Baccalauréat scientifique</h3>
+                            <p class="edu-school">Lycée Camille-Jullian, Bordeaux</p>
+                        </div>
+                    </article>
+                </div>
+
+                <article class="card award reveal spotlight">
+                    <div class="award-head">
+                        <div class="award-ico"><svg><use href="#i-trophy"/></svg></div>
+                        <div>
+                            <p class="edu-date mono">2008</p>
+                            <h3>Champion de France des IUT Informatique</h3>
+                        </div>
+                    </div>
+                    <p>En 2008, j'ai créé une équipe pour le challenge des IUT Informatique de France et nous sommes partis à Maubeuge pour remporter la compétition : 24 h non stop, 3 épreuves de 8 h — programmation de robots dans un jeu en réseau, développement d'un site web sécurisé sans aide, et hacking.</p>
+                    <div class="press">
+                        <a href="images/labri-hebdo.webp" data-lightbox data-caption="Article du LaBRI sur le résultat du concours des IUT">
+                            <img src="images/labri-hebdo.webp" width="579" height="355" alt="Article LaBRI Hebdo" loading="lazy">
+                        </a>
+                        <a href="images/article-sud-ouest-concours-iut-de-france.webp" data-lightbox data-caption="Article Sud-Ouest sur le résultat du concours des IUT">
+                            <img src="images/article-sud-ouest-concours-iut-de-france.webp" width="789" height="369" alt="Article Sud-Ouest" loading="lazy">
+                        </a>
+                    </div>
+                    <a class="link" href="https://www.labri.fr/service/labri-hebdo/LaBRI-Hebdo-178.html" target="_blank" rel="noopener noreferrer">Lire l'article du LaBRI <svg><use href="#i-arrow"/></svg></a>
+                </article>
             </div>
+        </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section class="section alt" id="recommandations">
+        <div class="container">
+            <p class="kicker reveal">06 · Recommandations</p>
+            <h2 class="reveal">Ils en <span class="grad">parlent</span></h2>
+            <div class="reco-grid">
+                <figure class="card reco reveal spotlight">
+                    <svg class="quote-ico"><use href="#i-quote"/></svg>
+                    <blockquote>J'ai travaillé avec Alexandre sur un projet legacy et à l'environnement technique difficile. Particulièrement persévérant face aux problèmes complexes, Alexandre s'interroge sur les meilleures pratiques et sait se remettre en question face à de nouvelles propositions. Ajoutez à ça une dose de bonne humeur, et vous comprendrez que j'ai trouvé en Alexandre un collègue sympa et efficace !</blockquote>
+                    <figcaption>
+                        <img src="images/reco/olivier.webp" width="60" height="60" alt="" loading="lazy">
+                        <span><strong>Olivier Croisier</strong><small>Senior fullstack developer, Java expert &amp; trainer, speaker</small></span>
+                    </figcaption>
+                </figure>
+                <figure class="card reco reveal spotlight">
+                    <svg class="quote-ico"><use href="#i-quote"/></svg>
+                    <blockquote>Travailler avec Alexandre est un vrai bonheur. C’est un développeur complet, aux multiples compétences évidemment mais c’est aussi et surtout un partenaire précieux qui sait s’imprégner de toutes les problématiques d’une entreprise et y apporter un esprit critique constructif et utile à tous. Son engagement sans faille et sa capacité d’adaptation en font pour moi un atout indéniable pour des structures en phase de développement.</blockquote>
+                    <figcaption>
+                        <span class="avatars">
+                            <img src="images/reco/julien.webp" width="60" height="60" alt="" loading="lazy">
+                            <img src="images/reco/alexis.webp" width="60" height="60" alt="" loading="lazy">
+                        </span>
+                        <span><strong>Julien Alart &amp; Alexis Barthélemy</strong><small>Co-Founders @Lumm</small></span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="cta card reveal">
+                <div class="cta-glow" aria-hidden="true"></div>
+                <p class="kicker">07 · Contact</p>
+                <h2>Un projet, une mission, une <span class="grad">équipe à faire grandir</span> ?</h2>
+                <p>Je suis ouvert à toute mission qui correspond à mes compétences, que ce soit en développement, en lead technique ou en accompagnement produit / projet / startup.</p>
+                <div class="hero-cta center">
+                    <a class="btn btn-primary" href="mailto:alexandre@egotech.fr"><svg><use href="#i-mail"/></svg> alexandre@egotech.fr</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/alexandreurbain/" target="_blank" rel="noopener noreferrer"><svg><use href="#i-linkedin"/></svg> LinkedIn</a>
+                    <a class="btn btn-ghost" href="file/URBAIN_Alexandre.pdf" download="URBAIN_Alexandre.pdf"><svg><use href="#i-download"/></svg> CV (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <a class="brand" href="#top">
+            <img src="images/EgoTech_logo-new.webp" width="30" height="37" alt="">
+            <span>Ego<b>Tech</b></span>
+        </a>
+        <p>© <span id="year">2026</span> EgoTech · Alexandre Urbain · Bordeaux</p>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/alexandreurbain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+            <a href="https://github.com/DeveloppeurGirondin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a href="mailto:alexandre@egotech.fr" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
         </div>
     </div>
 </footer>
-<link href="css/slick.min.css" type="text/css" rel="stylesheet" media="print" onload="this.media='all'"/>
-<link href="css/lightbox.min.css" type="text/css" rel="stylesheet" media="print" onload="this.media='all'"/>
-<link href="css/aos.css?ver=1.2.1" type="text/css" rel="stylesheet" media="print" onload="this.media='all'"/>
-<link href="css/main.css?ver=1.2.1" type="text/css" rel="stylesheet" media="print" onload="this.media='all'"/>
-<script src="scripts/lightbox-plus-jquery.min.js"></script>
-<script src="scripts/mdb.min.js?ver=1.2.1"></script>
-<script src="scripts/aos.js?ver=1.2.1"></script>
-<script src="scripts/slick.min.js"></script>
-<script async src="scripts/main.js?ver=1.2.1"></script>
+
+<dialog class="lightbox" id="lightbox" aria-label="Aperçu de l'image">
+    <button class="icon-btn lb-close" type="button" aria-label="Fermer">✕</button>
+    <figure>
+        <img src="" alt="">
+        <figcaption></figcaption>
+    </figure>
+</dialog>
+
+<script src="scripts/app.js?v=2.0.0" defer></script>
 </body>
 </html>
